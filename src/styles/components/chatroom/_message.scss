@@ -1,0 +1,33 @@
+.message{
+    margin: 1rem;
+    background: white;
+    border: 2px solid $myBlue;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+}
+
+.username{
+    font-weight: 700;
+}
+
+.content{
+    margin: 1rem;
+}
+
+.my-message{
+    @extend .message;
+    background: $myYellow;
+}
+
+.delete-icon{
+    font-weight: 700;
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+    }
+}
